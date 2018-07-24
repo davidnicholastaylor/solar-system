@@ -20,10 +20,11 @@ console.log(planets)
     `toUpperCase()` method on strings.
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase*/
-let upperPlanets = planets.map((planet) => {
+
+    let upperPlanets = planets.map((planet) => {
     let planetSplit = planet.split(` `);
     for (let i = 0; i < planetSplit.length; i++) {
-        planetSplit[i] = planetSplit[i].charAt(0).toUpperCase() + planetSplit[i]
+        planetSplit[i] = planetSplit[i].charAt(0).toUpperCase() + planet.slice(1)
     }
     return planetSplit.join(` `)
 });
