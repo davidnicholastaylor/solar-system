@@ -38,6 +38,14 @@ console.log(upperPlanets)
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
 
+const planetsWithE = upperPlanets.filter(planets => {
+    for (let i = 0; i < upperPlanets.length; i++) {
+        if (upperPlanets[i] === planets.includes(`e`)) {
+            return upperPlanets;
+        }
+    }
+})
+console.log(planetsWithE)
 
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
